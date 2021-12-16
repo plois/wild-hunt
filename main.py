@@ -167,8 +167,7 @@ while True:
             pygame.display.flip()
             clock.tick(FPS)
         else:
-            button_font = pygame.font.Font(
-                'D:\\University(KPI)\\Semestr_№5\\GameDev\\projectG3\\resources\\font/font.otf', 72)
+            button_font = pygame.font.Font('resources\\font\\font.otf', 72)
             start = button_font.render('TRY AGAIN', 1, pygame.Color('lightgray'))
             button_start = pygame.Rect(0, 0, 400, 150)
             button_start.center = HALF_WIDTH, HALF_HEIGHT
@@ -207,7 +206,7 @@ while True:
             pygame.display.flip()
             clock.tick(FPS)
     else:
-        button_font = pygame.font.Font('D:\\University(KPI)\\Semestr_№5\\GameDev\\projectG3\\resources\\font/font.otf',
+        button_font = pygame.font.Font('resources\\font\\font.otf',
                                        72)
         start = button_font.render('RESUME', 1, pygame.Color('lightgray'))
         button_start = pygame.Rect(0, 0, 400, 150)
