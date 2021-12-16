@@ -11,7 +11,7 @@ class menu_interface:
         self.font = pygame.font.SysFont('Arial', 36, bold=True)
         # menu
         self.menu_trigger = True
-        self.menu_picture = pygame.image.load('../resources/images/img.jpg').convert()
+        self.menu_picture = pygame.image.load('resources/images/img.jpg').convert()
 
     def fps(self, clock):
         display_fps = str(int(clock.get_fps()))
@@ -29,7 +29,7 @@ class menu_interface:
 
     def menu(self):
         x = 0
-        button_font = pygame.font.Font('..\\resources\\font/font.otf', 72)
+        button_font = pygame.font.Font('resources\\font/font.otf', 72)
         start = button_font.render('START', 1, pygame.Color('lightgray'))
         button_start = pygame.Rect(0, 0, 400, 150)
         button_start.center = HALF_WIDTH, HALF_HEIGHT
